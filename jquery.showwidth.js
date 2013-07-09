@@ -9,7 +9,8 @@
 *	
 */
 
-(function( $ ){
+
+jQuery(document).ready(function(){
 
 	$(window).resize(function(){	
 
@@ -31,7 +32,7 @@
 			/*
 			*	Set some styles to the markup of the pop-up.
 			*	Defining some variables for background, color etc
-			*	Change these variables below if you want another layout...
+			*	Change these variables below if u want another layout...
 			*/
 
 			var backgroundColor = '#ccc';
@@ -57,4 +58,4 @@
 
 	});
 
-})( jQuery );
+});
