@@ -1,12 +1,11 @@
 Showwidth
 =========
 
-A small jQuery plugin I made to help front-end developers find out their browsers width while developing responsive design.
+A small jQuery script file I made to help front-end developers find out their browsers width while developing responsive design.
 
 How it works: 
 
-By adding the code in a .js file or referencing it from: // Add google code place here :)
-The browser will, if resized, launch a pop-up window that displays the width of the browser.
+By including the code in a .js file the browser will, if resized, launch a pop-up window that displays the width of the browser.
 
 The code is open source etc. So share and care :) 
 If you have any ideas on how to make this plugin better or want to join me making the code better, please feel free to do so! :)

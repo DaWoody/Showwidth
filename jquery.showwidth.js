@@ -1,9 +1,7 @@
 /*
 *	Name:  			Showwidth.js
 *	Version: 		1.0
-*	Description: 	A small script to make a pop-up display the width in pixels of the browser window. 
-*					aimed to help developers understand when their responsive/adaptive layout 
-*					breaks etc.
+*	Description: 	A small script to make a pop-up display the width in pixels of the browser window. Aimed to help developers understand when their responsive/adaptive layout breaks etc.
 *	License: 		This is free through the open license agreement, share, care and spread :). 
 *	Author: 		Johan Wedfelt, check me out on GitHub, https://github.com/DaWoody, or go listen to my music: http://www.woodfieldtheartist.net
 *	
@@ -40,18 +38,21 @@ jQuery(document).ready(function(){
 			var textShadow = '1px 1px 2px #fff';
 			var fontSize = '38px';
 			var paddingTop = '15px';
+			var textAlign = 'center';
 
 			/*
 			*	Setting the changes to the css with some jQuery...
 			*/
 
-			$(showContainerBody).css('background-color', backgroundColor);
-			$(showContainerH1).css('color', textColor);
-			$(showContainerH1).css('font-size', fontSize);
-			$(showContainerH1).css('text-shadow', textShadow);
-			$(showContainerH1).css('text-align','center');
-			$(showContainerH1).css('padding-top', paddingTop);
+			$(showContainerH1).css({
+					'color' 		: textColor,
+					'font-size' 	: fontSize,
+					'text-shadow'	: textShadow,
+					'text-align'	: textAlign,
+					'padding-top'	: paddingTop
+			});
 
+			$(showContainerBody).css('background-color', backgroundColor);
 
 			//Use jQuery to update the h1 element in the pop-up.
 			$(showContainerH1).html('Width: '+ width + 'px');
@@ -59,3 +60,4 @@ jQuery(document).ready(function(){
 	});
 
 });
+	
